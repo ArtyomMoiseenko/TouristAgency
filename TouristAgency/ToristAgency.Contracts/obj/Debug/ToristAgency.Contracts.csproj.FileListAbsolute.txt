@@ -1,0 +1,5 @@
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.Contracts\bin\Debug\ToristAgency.Contracts.dll
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.Contracts\bin\Debug\ToristAgency.Contracts.pdb
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.Contracts\obj\Debug\ToristAgency.Contracts.csprojResolveAssemblyReference.cache
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.Contracts\obj\Debug\ToristAgency.Contracts.dll
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.Contracts\obj\Debug\ToristAgency.Contracts.pdb

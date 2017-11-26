@@ -1,0 +1,12 @@
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.DAL\bin\Debug\ToristAgency.DAL.dll.config
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.DAL\bin\Debug\ToristAgency.DAL.dll
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.DAL\bin\Debug\ToristAgency.DAL.pdb
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.DAL\bin\Debug\EntityFramework.dll
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.DAL\bin\Debug\ToristAgency.Contracts.dll
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.DAL\bin\Debug\ToristAgency.Contracts.pdb
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.DAL\bin\Debug\EntityFramework.xml
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.DAL\obj\Debug\TravelAgency.DAL.csprojResolveAssemblyReference.cache
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.DAL\obj\Debug\ToristAgency.DAL.dll
+C:\Users\artyo\Source\Repos\TouristAgency\TouristAgency\ToristAgency.DAL\obj\Debug\ToristAgency.DAL.pdb
