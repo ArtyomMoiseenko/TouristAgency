@@ -6,17 +6,32 @@ using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TouristAgency;
 using TouristAgency.Controllers;
+using Moq;
+using ToristAgency.Contracts;
 
 namespace TouristAgency.Tests.Controllers
 {
     [TestClass]
     public class HomeControllerTest
     {
+        private Mock<IGenericRepository<Role>> mockRoleRepository;
+        private Mock<IGenericRepository<User>> mockUserRepository;
+        private HomeController controller;
+
+        [TestInitialize]
+        public void SetUp()
+        {
+            mockRoleRepository = new Mock<IGenericRepository<Role>>();
+            mockRoleRepository.Setup(a => a.Get()).Returns(new List<Role>());
+            mockUserRepository = new Mock<IGenericRepository<User>>();
+            mockUserRepository.Setup(a => a.Get()).Returns(new List<User>());
+        }
+
         [TestMethod]
         public void Index()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            controller = new HomeController(mockRoleRepository.Object, mockUserRepository.Object);
 
             // Act
             ViewResult result = controller.Index() as ViewResult;
@@ -26,29 +41,29 @@ namespace TouristAgency.Tests.Controllers
         }
 
         [TestMethod]
-        public void About()
+        public void RolesAreExist()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            controller = new HomeController(mockRoleRepository.Object, mockUserRepository.Object);
 
             // Act
-            ViewResult result = controller.About() as ViewResult;
+            var roles = controller.GetAllRoles();
 
             // Assert
-            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
+            Assert.IsNotNull(roles);
         }
 
         [TestMethod]
-        public void Contact()
+        public void UsersAreExist()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            controller = new HomeController(mockRoleRepository.Object, mockUserRepository.Object);
 
             // Act
-            ViewResult result = controller.Contact() as ViewResult;
+            var users = controller.GetAllUsers();
 
             // Assert
-            Assert.IsNotNull(result);
+            Assert.IsNotNull(users);
         }
     }
 }

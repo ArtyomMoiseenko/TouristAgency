@@ -12,30 +12,29 @@ namespace TouristAgency.Controllers
     {
         private readonly TravelAgencyContext context = new TravelAgencyContext();
         private readonly IGenericRepository<Role> _roleRepository;
+        private readonly IGenericRepository<User> _userRepository;
 
-        public HomeController(IGenericRepository<Role> roleRepository)
+        public HomeController(IGenericRepository<Role> roleRepository, IGenericRepository<User> userRepository)
         {
             _roleRepository = roleRepository;
+            _userRepository = userRepository;
         }
 
         public ActionResult Index()
         {
-            _roleRepository.Create(new Role() { Name = "admin" });
+            var roles = GetAllRoles();
+            var users = GetAllUsers();
             return View();
         }
 
-        public ActionResult About()
+        public IEnumerable<Role> GetAllRoles()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+            return _roleRepository.Get();
         }
 
-        public ActionResult Contact()
+        public IEnumerable<User> GetAllUsers()
         {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return _userRepository.Get();
         }
     }
 }
