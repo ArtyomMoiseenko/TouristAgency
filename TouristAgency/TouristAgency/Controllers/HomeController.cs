@@ -13,9 +13,9 @@ namespace TouristAgency.Controllers
         private readonly TravelAgencyContext context = new TravelAgencyContext();
         private readonly IGenericRepository<Role> _roleRepository;
 
-        public HomeController()
+        public HomeController(IGenericRepository<Role> roleRepository)
         {
-            _roleRepository = new GenericRepository<Role>(context);
+            _roleRepository = roleRepository;
         }
 
         public ActionResult Index()
