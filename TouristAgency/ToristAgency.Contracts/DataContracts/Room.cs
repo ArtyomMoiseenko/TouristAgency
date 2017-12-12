@@ -14,7 +14,7 @@ namespace ToristAgency.Contracts
         public decimal Cost { get; set; }
         public int HotelId { get; set; }
         public int RoomTypeId { get; set; }
-        public int TourId { get; set; }
+        public int? TourId { get; set; }
 
         public virtual RoomType RoomType { get; set; }
         public virtual Hotel Hotel { get; set; }

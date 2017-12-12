@@ -9,7 +9,7 @@ namespace ToristAgency.Contracts
     public class TourType
     {
         public int Id { get; set; }
-        public int Name { get; set; }
+        public string Name { get; set; }
         public int AmountAdults { get; set; }
         public int AmountChildren { get; set; }
     }

@@ -14,7 +14,7 @@ namespace ToristAgency.Contracts
         public DateTime EndDate { get; set; }
         public decimal Cost { get; set; }
         public decimal Discount { get; set; }
-        public int HotelId { get; set; }
+        public int? HotelId { get; set; }
         public int DietId { get; set; }
         public int TourTypeId { get; set; }
 

@@ -22,3 +22,27 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.jumbotron{
+    background-color: #d8ffdd;
+    height: 1280px;
+}
+.navbar-inverse {
+    background-color: #f1b7ff;
+    border-color: #f1b7ff !important;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white !important;
+    font-weight: bold;
+    font-size: 16px;
+}
+.navbar-inverse .navbar-brand {
+    color: white !important;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+body{
+    height: 100%;
+}

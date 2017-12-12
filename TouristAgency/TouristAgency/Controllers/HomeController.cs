@@ -22,19 +22,7 @@ namespace TouristAgency.Controllers
 
         public ActionResult Index()
         {
-            var roles = GetAllRoles();
-            var users = GetAllUsers();
             return View();
-        }
-
-        public IEnumerable<Role> GetAllRoles()
-        {
-            return _roleRepository.Get();
-        }
-
-        public IEnumerable<User> GetAllUsers()
-        {
-            return _userRepository.Get();
         }
     }
 }

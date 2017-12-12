@@ -1,0 +1,87 @@
+﻿@model TouristAgency.Models.TourViewModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Удалить информацию о пользователе</h2>
+
+<h3>Вы уверены, что хотите удалить информацию?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Diet.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Diet.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hotel.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hotel.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TourType.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TourType.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discount)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Удалить" class="btn btn-danger" /> |
+            @Html.ActionLink("Отмена", "Index")
+        </div>
+    }
+</div>

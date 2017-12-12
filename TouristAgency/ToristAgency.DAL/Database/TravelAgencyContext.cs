@@ -9,8 +9,8 @@ namespace ToristAgency.DAL
         public TravelAgencyContext()
             :base("TravelAgencyContext")
         {
-            //Database.SetInitializer<TravelAgencyContext>(new TravelAgencyContextInitializer());
-            //Database.Initialize(true);
+            Database.SetInitializer<TravelAgencyContext>(new TravelAgencyInitializer());
+            Database.Initialize(true);
         }
 
         public DbSet<Role> Roles { get; set; }

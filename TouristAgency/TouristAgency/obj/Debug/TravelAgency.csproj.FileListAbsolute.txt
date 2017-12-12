@@ -105,6 +105,7 @@ C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\Tourist
 C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\TouristAgency.dll
 C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\TouristAgency.pdb
 C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\Antlr3.Runtime.dll
+C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\AutoMapper.dll
 C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\EntityFramework.dll
 C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\EntityFramework.SqlServer.dll
 C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\Microsoft.AI.Agent.Intercept.dll
@@ -135,6 +136,7 @@ C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\WebGrea
 C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\ToristAgency.Contracts.pdb
 C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\ToristAgency.DAL.pdb
 C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\ToristAgency.DAL.dll.config
+C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\AutoMapper.xml
 C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\EntityFramework.xml
 C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\EntityFramework.SqlServer.xml
 C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
@@ -159,3 +161,5 @@ C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\Microso
 C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\obj\Debug\TravelAgency.csprojResolveAssemblyReference.cache
 C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\obj\Debug\TouristAgency.dll
 C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\obj\Debug\TouristAgency.pdb
+C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\BootstrapRating.dll
+C:\Users\artyo\Source\Repos\TravelAgency\TouristAgency\TouristAgency\bin\BootstrapRating.xml

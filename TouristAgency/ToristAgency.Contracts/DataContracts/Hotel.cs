@@ -12,10 +12,11 @@ namespace ToristAgency.Contracts
         public string Name { get; set; }
         public string Address { get; set; }
         public string Phone { get; set; }
-        public int HotelRating { get; set; }
+        public double HotelRating { get; set; }
         public int CityId { get; set; }
 
         public virtual City City { get; set; }
         public virtual ICollection<Tour> Tours { get; set; }
+        public virtual ICollection<Room> Rooms { get; set; }
     }
 }

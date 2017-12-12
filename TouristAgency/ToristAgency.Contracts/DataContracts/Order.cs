@@ -13,5 +13,9 @@ namespace ToristAgency.Contracts
         public int TourId { get; set; }
         public DateTime DateOrder { get; set; }
         public decimal Cost { get; set; }
+        public string Status { get; set; }
+
+        public virtual User User { get; set; }
+        public virtual Tour Tour { get; set; }
     }
 }

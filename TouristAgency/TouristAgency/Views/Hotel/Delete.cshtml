@@ -1,0 +1,66 @@
+﻿@model TouristAgency.Models.HotelViewModel
+
+@{
+    ViewBag.Title = "Удаление";
+}
+
+<h2>Удалить информацию об отеле</h2>
+
+<h3>Вы уверены, что хотите удалить информацию?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HotelRating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HotelRating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CityName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Удалить" class="btn btn-danger" />
+        </div>
+    }
+    <br>
+    <div>
+        @Html.ActionLink("Отмена", "Index")
+    </div>
+</div>

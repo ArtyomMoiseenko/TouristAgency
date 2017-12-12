@@ -43,6 +43,7 @@ namespace ToristAgency.DAL
         }
         public void Remove(TEntity item)
         {
+            _dbSet.Attach(item);
             _dbSet.Remove(item);
             _context.SaveChanges();
         }
