@@ -72,7 +72,7 @@ namespace TouristAgency.Controllers
             var tour = Mapper.Map<Tour, TourViewModel>(_tourRepository.FindById(id));
             tour.TourTypes = _tourTypeRepository.Get();
             tour.Diets = _dietRepository.Get();
-            tour.Hotels = _hotelRepository.Get();
+            tour.Hotels = _hotelRepository.Get().ToList();
             return View(tour);
         }
 

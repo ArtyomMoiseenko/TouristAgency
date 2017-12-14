@@ -33,8 +33,11 @@ namespace TouristAgency.Models
         public int TourTypeId { get; set; }
         [Display(Name = "Отель")]
         public virtual Hotel Hotel { get; set; }
+        [Display(Name = "Отель")]
         public virtual IEnumerable<Hotel> Hotels { get; set; }
+        [Display(Name = "Питание")]
         public virtual IEnumerable<Diet> Diets { get; set; }
+        [Display(Name = "Тип тура")]
         public virtual IEnumerable<TourType> TourTypes { get; set; }
         [Display(Name = "Питание")]
         public virtual Diet Diet { get; set; }

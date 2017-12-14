@@ -27,6 +27,8 @@ namespace TouristAgency
                     .ForMember(hvm => hvm.CityId, h => h.MapFrom(ho => ho.CityId));
 
                 cfg.CreateMap<Tour, TourViewModel>();
+                cfg.CreateMap<TourViewModel, Tour>();
+
                 cfg.CreateMap<HotelViewModel, Hotel>();
                 cfg.CreateMap<Order, OrderViewModel>();
                 cfg.CreateMap<Room, RoomViewModel>();
